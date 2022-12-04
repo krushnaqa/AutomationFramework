@@ -1,0 +1,48 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-04T05:56:31.785Z",
+        "line": 4,
+        "name": "testing urls",
+        "description": "",
+        "id": "test;testing-urls",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7646461900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user open the Browser",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.user_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 928524100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User close Browser",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.user_close_browser()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "test",
+    "description": "",
+    "id": "test",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/Features/test.feature",
+    "tags": []
+  }
+]
