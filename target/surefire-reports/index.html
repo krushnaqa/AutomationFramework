@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Krushna_Work\Projects\Project3\automationFramework1\testng.xml</span>
+                    <span>D:\Software_Testing\Automation_Projects\WorkSpace1\AutomationFramework\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;testing urls&quot;, &quot;Optional[test]&quot;)">runScenario("testing urls", "Optional[test]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Runner.CucumberRerunner" class="method navigator-link" hash-for-method="runScenario(&quot;check and verify url is redirected to another page&quot;, &quot;Optional[test]&quot;)">runScenario("check and verify url is redirected to another page", "Optional[test]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;check and verify url is redirected to another page&quot;, &quot;Optional[test]&quot;)">runScenario("check and verify url is redirected to another page", "Optional[test]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,7 +122,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Runner.CucumberRerunner" class="method navigator-link" hash-for-method="runScenario(&quot;testing urls&quot;, &quot;Optional[test]&quot;)">runScenario("testing urls", "Optional[test]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;check and verify url is redirected to Practise page&quot;, &quot;Optional[test]&quot;)">runScenario("check and verify url is redirected to Practise page", "Optional[test]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -140,31 +145,37 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;testing urls&quot;, &quot;Optional[test]&quot;)">
-                  </a> <!-- runScenario("testing urls", "Optional[test]") -->
+                  <a name="runScenario(&quot;check and verify url is redirected to another page&quot;, &quot;Optional[test]&quot;)">
+                  </a> <!-- runScenario("check and verify url is redirected to another page", "Optional[test]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("testing urls","Optional[test]")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &quot;user open the Browser&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Given(&quot;user open the Browser&quot;)
-public void user_open_the_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:102)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:117)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 9 stack frames
+                  <span class="parameters">("check and verify url is redirected to another page","Optional[test]")</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at stepDefinitions.StepDefinition.verify_user_is_on_another_page(StepDefinition.java:46)
+	at ✽.verify user is on another page(file:///D:/Software_Testing/Automation_Projects/WorkSpace1/AutomationFramework/src/main/java/Features/PracticePage.feature:11)
+... Removed 2 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Runner.CucumberRerunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;check and verify url is redirected to another page&quot;, &quot;Optional[test]&quot;)">
+                  </a> <!-- runScenario("check and verify url is redirected to another page", "Optional[test]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("check and verify url is redirected to another page","Optional[test]")</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at stepDefinitions.StepDefinition.verify_user_is_on_another_page(StepDefinition.java:46)
+	at ✽.verify user is on another page(file:///D:/Software_Testing/Automation_Projects/WorkSpace1/AutomationFramework/src/main/java/Features/PracticePage.feature:11)
+... Removed 2 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -175,15 +186,15 @@ public void user_open_the_browser() {
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Runner.CucumberRerunner</span>
+              <span class="class-name">Runner.CucumberRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;testing urls&quot;, &quot;Optional[test]&quot;)">
-                  </a> <!-- runScenario("testing urls", "Optional[test]") -->
+                  <a name="runScenario(&quot;check and verify url is redirected to Practise page&quot;, &quot;Optional[test]&quot;)">
+                  </a> <!-- runScenario("check and verify url is redirected to Practise page", "Optional[test]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("testing urls","Optional[test]")</span>
+                  <span class="parameters">("check and verify url is redirected to Practise page","Optional[test]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -193,13 +204,13 @@ public void user_open_the_browser() {
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Krushna_Work\Projects\Project3\automationFramework1\testng.xml</span>
+            <span class="header-content">D:\Software_Testing\Automation_Projects\WorkSpace1\AutomationFramework\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite data-provider-thread-count=&quot;3&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite data-provider-thread-count=&quot;4&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Runner.CucumberRunner&quot;/&gt;
@@ -251,20 +262,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'Runner.CucumberRerunner')
-data.setCell(0, 3, 6654);
+data.setCell(0, 2, 'Runner.CucumberRunner')
+data.setCell(0, 3, 12151);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'Runner.CucumberRunner')
-data.setCell(1, 3, 159);
+data.setCell(1, 2, 'Runner.CucumberRerunner')
+data.setCell(1, 3, 9792);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'Runner.CucumberRunner')
+data.setCell(2, 3, 8652);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -296,29 +311,35 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">runScenario("check and verify url is redirected to Practise page", "Optional[test]")</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("testing urls", "Optional[test]")</span>
-                <span class="method-start">536 ms</span>
+                <span class="method-name">runScenario("check and verify url is redirected to another page", "Optional[test]")</span>
+                <span class="method-start">561 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">712 ms</span>
+                <span class="method-start">12713 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Runner.CucumberRerunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">820 ms</span>
+                <span class="method-start">12823 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("testing urls", "Optional[test]")</span>
-                <span class="method-start">842 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("check and verify url is redirected to another page", "Optional[test]")</span>
+                <span class="method-start">12854 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">7498 ms</span>
+                <span class="method-start">22647 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

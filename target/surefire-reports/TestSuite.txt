@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.854 s - in TestSuite
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 23.436 s <<< FAILURE! - in TestSuite
+runScenario(Runner.CucumberRunner)  Time elapsed: 8.662 s  <<< FAILURE!
+java.lang.AssertionError: null
+
+runScenario(Runner.CucumberRerunner)  Time elapsed: 9.793 s  <<< FAILURE!
+java.lang.AssertionError: null
+

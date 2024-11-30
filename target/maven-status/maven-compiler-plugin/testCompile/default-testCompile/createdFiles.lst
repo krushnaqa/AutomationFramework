@@ -1,2 +1,3 @@
 Runner\CucumberRunner.class
 Runner\CucumberRerunner.class
+stepDefinitions\StepDefinition.class

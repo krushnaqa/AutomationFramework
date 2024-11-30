@@ -5,13 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
-public class LoginPageMethods {
+
+public class PractisePageMethods {
 
 	WebDriver driver;
 	WebDriverWait wait;
 	
-	public LoginPageMethods(WebDriver driver, WebDriverWait wait) {
+	public PractisePageMethods(WebDriver driver, WebDriverWait wait) {
 		this.wait=wait;
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
@@ -22,7 +24,9 @@ public class LoginPageMethods {
 	public WebElement user;
 	
 	
-	
+	public void verifyPractisePageTitle() {
+		Assert.assertEquals(driver.getTitle(),"Practice Page");
+	}
 	
 	
 	
